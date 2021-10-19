@@ -1,7 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import "./Profile.css";
 
 const Profile = (props) => {
-  const { name, imgUrl, subject, text } = props.doctor;
+  const { key, name, imgUrl, subject, text } = props.doctor;
   return (
     <>
       <div class="col">
@@ -10,8 +12,11 @@ const Profile = (props) => {
           <div class="card-body">
             <h4 class="card-title">{name}</h4>
             <h5>{subject}</h5>
-
-            <p class="card-text">{text}</p>
+            <div className="appoin-btn">
+              <Link to={`appoinment/${key}`}>
+                <button className="btn btn-primary">Appoinment</button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

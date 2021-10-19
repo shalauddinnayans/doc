@@ -1,9 +1,9 @@
 import React from "react";
-
+import "./NotFound.css";
 const NotFound = () => {
   return (
     <div>
-      <h1>not founded</h1>
+      <h1 className="text">not founded</h1>
     </div>
   );
 };

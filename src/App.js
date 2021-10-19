@@ -13,48 +13,55 @@ import Doctors from "./components/Doctors/Doctors";
 import News from "./components/News/News";
 import Contact from "./components/Contact/Contact";
 import Appoinment from "./components/Appoinment/Appoinment";
+import AuthProvider from "./Contexts/AuthProvider";
+import PrivateRoute from "./components/Login/PrivateRoute/PrivateRoute";
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Header></Header>
-        <Switch>
-          <Route exact path="/">
-            <Home></Home>
-          </Route>
-          <Route path="/home">
-            <Home></Home>
-          </Route>
-          <Route path="/about">
-            <About></About>
-          </Route>
-          <Route path="/services">
-            <Services></Services>
-          </Route>
-          <Route path="/doctors">
-            <Doctors></Doctors>
-          </Route>
-          <Route path="/news">
-            <News></News>
-          </Route>
-          <Route path="/contact">
-            <Contact></Contact>
-          </Route>
-          <Route path="/appoinment">
-            <Appoinment></Appoinment>
-          </Route>
-          <Route path="/register">
-            <Register></Register>
-          </Route>
-          <Route path="/login">
-            <Login></Login>
-          </Route>
-          <Route path="*">
-            <NotFound></NotFound>
-          </Route>
-        </Switch>
-        <Footer></Footer>
-      </Router>
+      <AuthProvider>
+        <Router>
+          <Header></Header>
+          <Switch>
+            <Route exact path="/">
+              <Home></Home>
+            </Route>
+            <Route path="/home">
+              <Home></Home>
+            </Route>
+            <Route path="/about">
+              <About></About>
+            </Route>
+            <Route path="/services">
+              <Services></Services>
+            </Route>
+            <Route path="/doctors">
+              <Doctors></Doctors>
+            </Route>
+            <Route path="/news">
+              <News></News>
+            </Route>
+            <Route path="/contact">
+              <Contact></Contact>
+            </Route>
+            <PrivateRoute exact path="/appoinment">
+              <Appoinment></Appoinment>
+            </PrivateRoute>
+            <PrivateRoute path="/appoinment/:serviceId">
+              <Appoinment></Appoinment>
+            </PrivateRoute>
+            <Route path="/register">
+              <Register></Register>
+            </Route>
+            <Route path="/login">
+              <Login></Login>
+            </Route>
+            <Route path="*">
+              <NotFound></NotFound>
+            </Route>
+          </Switch>
+          <Footer></Footer>
+        </Router>
+      </AuthProvider>
     </div>
   );
 }

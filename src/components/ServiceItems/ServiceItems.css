@@ -1,0 +1,10 @@
+.btn-style {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #1f2b6c; */
+  color: white;
+}
+.btn-text {
+  color: #1f2b6c;
+}

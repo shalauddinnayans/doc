@@ -1,6 +1,6 @@
 import React from "react";
 import "./WelcomeBrief.css";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import wellcomeImg from "../../images/wellcome.png";
 import { Container } from "react-bootstrap";
 
@@ -16,7 +16,7 @@ const WelcomeBrief = () => {
             tempore doloremque impedit, magnam a amet magni nihil dolor aperiam
             tenetur aspernatur ut delectus id similique. Aliquid non maxime ab.
           </p>
-          <NavLink to="/about">Learn More</NavLink>
+          <Link to="/about">Learn More</Link>
           <br />
         </div>
         <div className="brief-part-img">

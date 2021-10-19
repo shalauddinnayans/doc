@@ -1,18 +1,24 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import "./ServiceItems.css";
 
 const ServiceItems = (props) => {
-  const { name, text, imgUrl } = props.service;
+  const { key, name, text, imgUrl } = props.service;
   return (
     <>
-      <div class="col">
-        <div class="card h-100">
+      <div className="col">
+        <div className="card h-100">
           <img src={imgUrl} class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">{name}</h5>
-            <p class="card-text">{text}</p>
+          <div className="card-body">
+            <h5 className="card-title">{name}</h5>
+            <p className="card-text">{text}</p>
           </div>
-          <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
+          <div className="card-footer">
+            <small className="text-muted btn-style">
+              <Link to={`appoinment/${key}`}>
+                <button className="btn btn-text">Book Appoinment</button>
+              </Link>
+            </small>
           </div>
         </div>
       </div>

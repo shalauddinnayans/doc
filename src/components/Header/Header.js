@@ -1,17 +1,19 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./Header.css";
 import { AiOutlineClockCircle } from "react-icons/ai";
 import { ImLocation } from "react-icons/im";
 import { FiPhoneCall } from "react-icons/fi";
 import { IconContext } from "react-icons";
+import useAuth from "../../hooks/useAuth";
 
 const Header = () => {
+  const { user, logOut } = useAuth();
   return (
     <div>
       <div className="top-most">
         <div>
-          <h2>MEDCEL</h2>
+          <h2>MEDDCEL</h2>
         </div>
         <div className="top-most-items">
           <div className="top-most-item">
@@ -68,7 +70,9 @@ const Header = () => {
           </div>
         </div>
         <div>
-          <button className="top-most-btn">Appoinment</button>
+          <Link to="/appoinment">
+            <button className="top-most-btn">Appoinment</button>
+          </Link>
         </div>
       </div>
       {/* Nev bar */}
@@ -84,8 +88,14 @@ const Header = () => {
           </nav>
         </div>
         <div>
-          <NavLink to="/login">Login</NavLink>
-          <NavLink to="/register">Register</NavLink>
+          {user.email ? (
+            <button onClick={logOut}>log out</button>
+          ) : (
+            <div>
+              <NavLink to="/login">Login</NavLink>
+              <NavLink to="/register">Register</NavLink>
+            </div>
+          )}
         </div>
       </div>
     </div>

@@ -12,11 +12,9 @@ const Doctors = () => {
   return (
     <div>
       <div className="row row-cols-1 row-cols-md-3 g-4">
-        {/* <CardGroup> */}
         {person.map((doctor) => (
           <Profile key={doctor.id} doctor={doctor}></Profile>
         ))}
-        {/* </CardGroup> */}
       </div>
     </div>
   );
