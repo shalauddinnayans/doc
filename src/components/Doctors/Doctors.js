@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Profile from "../Profile/Profile";
-import { CardGroup } from "react-bootstrap";
 
 const Doctors = () => {
   const [person, setPerson] = useState([]);

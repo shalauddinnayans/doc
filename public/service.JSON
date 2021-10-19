@@ -1,38 +1,38 @@
 [
   {
     "key": 1,
-    "name": "Free Checkup ",
+    "name": "Free Checkup",
     "text": "Lorem ipsum dolor sit amet, consectetur adipiscing Quisque placerat Convallis felis vitae tortor augue. Velit nascetur massa in.",
-    "imgUrl": ""
+    "imgUrl": "./Rectangle 20.png"
   },
   {
     "key": 2,
-    "name": "",
+    "name": "Body Checkup",
     "text": "Lorem ipsum dolor sit amet, consectetur adipiscing Quisque placerat Convallis felis vitae tortor augue. Velit nascetur massa in.",
-    "imgUrl": ""
+    "imgUrl": "./Rectangle 20.png"
   },
   {
     "key": 3,
-    "name": "",
+    "name": "Health Checkup",
     "text": "Lorem ipsum dolor sit amet, consectetur adipiscing Quisque placerat Convallis felis vitae tortor augue. Velit nascetur massa in.",
-    "imgUrl": ""
+    "imgUrl": "./Rectangle 20.png"
   },
   {
     "key": 4,
-    "name": "",
+    "name": "Checkup",
     "text": "Lorem ipsum dolor sit amet, consectetur adipiscing Quisque placerat Convallis felis vitae tortor augue. Velit nascetur massa in.",
-    "imgUrl": ""
+    "imgUrl": "./Rectangle 20.png"
   },
   {
     "key": 5,
-    "name": "",
+    "name": "Checkup",
     "text": "Lorem ipsum dolor sit amet, consectetur adipiscing Quisque placerat Convallis felis vitae tortor augue. Velit nascetur massa in.",
-    "imgUrl": ""
+    "imgUrl": "./Rectangle 20.png"
   },
   {
     "key": 6,
-    "name": "",
+    "name": "Checkup",
     "text": "Lorem ipsum dolor sit amet, consectetur adipiscing Quisque placerat Convallis felis vitae tortor augue. Velit nascetur massa in.",
-    "imgUrl": ""
+    "imgUrl": "./Rectangle 20.png"
   }
 ]

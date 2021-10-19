@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./Profile.css";
 
 const Profile = (props) => {
-  const { key, name, imgUrl, subject, text } = props.doctor;
+  const { key, name, imgUrl, subject } = props.doctor;
   return (
     <>
       <div class="col">

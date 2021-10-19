@@ -1,6 +1,6 @@
 import React from "react";
 import "./WelcomeBrief.css";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import wellcomeImg from "../../images/wellcome.png";
 import { Container } from "react-bootstrap";
 
