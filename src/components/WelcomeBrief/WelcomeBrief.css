@@ -1,0 +1,17 @@
+.brief-part {
+  text-align: center;
+}
+.brief-part h3 {
+  color: #159eec;
+}
+.brief-part h1 {
+  color: #1f2b6c;
+}
+.brief-part a {
+  text-decoration: none;
+}
+.brief-part-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

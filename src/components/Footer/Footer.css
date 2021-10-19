@@ -1,0 +1,22 @@
+.footer-down-part-continer {
+  color: #fcfefe;
+  background-color: #1f2b6c;
+}
+.footer-down-part {
+  display: flex;
+  justify-content: space-around;
+}
+.footer-nav a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+}
+.footer-most-down-part {
+  display: flex;
+  justify-content: space-around;
+}
+.footer-most-down-part a {
+  color: white;
+  margin-right: 5px;
+}

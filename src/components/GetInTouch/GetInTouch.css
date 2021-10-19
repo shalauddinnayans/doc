@@ -1,0 +1,20 @@
+.footer-contact-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.footer-contact-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-contact-item {
+  height: 14em;
+  width: 14em;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-right: 2em;
+  text-align: left;
+  color: #1f2b6c;
+  background-color: #bfd2f8;
+}
