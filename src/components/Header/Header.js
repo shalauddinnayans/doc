@@ -88,7 +88,7 @@ const Header = () => {
           </nav>
         </div>
         <div>
-          {user.email ? (
+          {user.displayName ? (
             <button onClick={logOut}>log out</button>
           ) : (
             <div>

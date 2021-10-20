@@ -4,13 +4,18 @@ import useAuth from "../../hooks/useAuth";
 import "./Login.css";
 
 const Login = () => {
-  const { signInUsingGoogle } = useAuth();
+  const { signInUsingGoogle, signInUsingGithub } = useAuth();
   const location = useLocation();
   const history = useHistory();
   const redirect = location.state?.from || "/home";
 
   const hendleGoogleSignIn = () => {
     signInUsingGoogle().then((result) => {
+      history.push(redirect);
+    });
+  };
+  const hendleGithubSignIn = () => {
+    signInUsingGithub().then((result) => {
       history.push(redirect);
     });
   };
@@ -59,7 +64,9 @@ const Login = () => {
           Google sigin
         </button>
         <button className="btn btn-primary m-2">Facebook sigin</button>
-        <button className="btn btn-primary m-2">Github sigin</button>
+        <button className="btn btn-primary m-2" onClick={hendleGithubSignIn}>
+          Github sigin
+        </button>
       </div>
     </div>
   );
