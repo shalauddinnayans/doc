@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ServiceItems from "../ServiceItems/ServiceItems";
+import GetInTouch from "../GetInTouch/GetInTouch";
 
 const Services = () => {
   const [service, setService] = useState([]);
@@ -15,6 +16,7 @@ const Services = () => {
           <ServiceItems key={service.key} service={service}></ServiceItems>
         ))}
       </div>
+      <GetInTouch></GetInTouch>
     </div>
   );
 };

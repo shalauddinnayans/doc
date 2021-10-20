@@ -13,6 +13,7 @@ import initializeAuthentication from "../Firebase/firebase.init";
 initializeAuthentication();
 const useFirebase = () => {
   const [user, setUser] = useState({});
+  console.log(user);
   const auth = getAuth();
   const googleProvider = new GoogleAuthProvider();
   const githubProvider = new GithubAuthProvider();
@@ -45,6 +46,7 @@ const useFirebase = () => {
     user,
     signInUsingGoogle,
     signInUsingGithub,
+
     logOut,
   };
 };

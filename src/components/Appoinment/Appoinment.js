@@ -2,10 +2,10 @@ import React from "react";
 import { useParams } from "react-router";
 
 const Appoinment = () => {
-  const { name } = useParams();
+  const { serviceId } = useParams();
   return (
     <div>
-      <h1>{name}</h1>
+      <h1>{serviceId}</h1>
     </div>
   );
 };

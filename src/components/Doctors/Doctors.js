@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Profile from "../Profile/Profile";
+import GetInTouch from "../GetInTouch/GetInTouch";
 
 const Doctors = () => {
   const [person, setPerson] = useState([]);
@@ -15,6 +16,7 @@ const Doctors = () => {
           <Profile key={doctor.id} doctor={doctor}></Profile>
         ))}
       </div>
+      <GetInTouch></GetInTouch>
     </div>
   );
 };

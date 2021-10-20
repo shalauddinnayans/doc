@@ -43,9 +43,9 @@ function App() {
             <Route path="/contact">
               <Contact></Contact>
             </Route>
-            <PrivateRoute exact path="/appoinment">
+            {/* <PrivateRoute exact path="/appoinment">
               <Appoinment></Appoinment>
-            </PrivateRoute>
+            </PrivateRoute> */}
             <PrivateRoute path="/appoinment/:serviceId">
               <Appoinment></Appoinment>
             </PrivateRoute>

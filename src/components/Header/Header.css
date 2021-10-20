@@ -1,7 +1,7 @@
 .top-most {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 0 2em;
   /* margin: 1em; */
   /* margin-left: 200px;
@@ -45,7 +45,16 @@
   text-decoration: none;
   margin-right: 10px;
 }
-
+.login-text {
+  margin-right: 5px;
+  color: white;
+}
+.logout-btn {
+  border-radius: 10px;
+  background-color: #bfd2f8;
+  padding: 10px 20px;
+  color: white;
+}
 /* .item-icon {
   font-size: large;
   font-weight: 900;

@@ -87,9 +87,15 @@ const Header = () => {
             <NavLink to="/contact">Contact</NavLink>
           </nav>
         </div>
+
         <div>
           {user.displayName ? (
-            <button onClick={logOut}>log out</button>
+            <div>
+              <small className="login-text">Login As {user?.displayName}</small>
+              <button className="logout-btn" onClick={logOut}>
+                log out
+              </button>
+            </div>
           ) : (
             <div>
               <NavLink to="/login">Login</NavLink>
